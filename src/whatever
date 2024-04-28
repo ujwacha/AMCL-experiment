@@ -1,0 +1,44 @@
+
+// impl Coordinate {
+
+//     fn new() -> Self {
+// 	Coordinate { x: 0.0, y: 0.0 }
+//     }
+
+//     fn from(x: f64, y:f64) -> Self {
+// 	Coordinate { x , y  }
+//     }
+
+//     fn translate(&self, vector: Coordinate) -> Self {
+// 	Coordinate {
+// 	    x: self.x + vector.x,
+// 	    y: self.y + vector.y
+// 	}
+//     }
+
+//     fn rotate_origin(&self, angle: f64) -> Self {
+// 	let transform_coord :Coordinate = Coordinate { x:self.x.cos() , y: self.y.sin() }; 
+
+// 	self.transform_complex(transform_coord)
+
+//     }
+
+//     fn rotate(&self, through: Coordinate, angle: f64 ) -> Self {
+// 	self.translate(through.negate())
+// 	    .rotate_origin(angle)
+// 	    .translate(through)
+//     }
+
+//     fn transform_complex(&self, complex: Coordinate) -> Self {
+// 	Coordinate {
+// 	    x: (self.x * complex.x) - (self.y * complex.y),
+// 	    y: (self.x * complex.y) + (self.y * complex.x)
+// 	}
+//     }
+
+//     fn negate(&self) -> Self {
+// 	Coordinate { x: -self.x, y: -self.y }
+//     }
+
+// }
+
